@@ -25,7 +25,7 @@
 #include <unistd.h>
 #include <X11/Xlib.h>
 
-#include "wind.h"
+#include "water.h"
 
 // Lock-mask permutations that should be grabbed in addition
 // to the modifiers specified to the functions below.

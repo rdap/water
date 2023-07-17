@@ -1,4 +1,4 @@
-AC_INIT([Wind], [1.5], [windwm-bugs@lists.sourceforge.net], [wind])
+AC_INIT([water], [current], [43019545+rdap@users.noreply.github.com], [water])
 AM_INIT_AUTOMAKE([foreign])
 
 AC_PROG_CC_C99

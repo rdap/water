@@ -27,7 +27,7 @@
 #include <X11/Xlib.h>
 #include <X11/cursorfont.h>
 
-#include "wind.h"
+#include "water.h"
 
 #define EXT_TOP (lineheight + 2)
 #define EXT_BOTTOM (halfleading + 1)

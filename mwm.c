@@ -24,7 +24,7 @@
 #include <X11/Xlib.h>
 #include <X11/Xproto.h>
 
-#include "wind.h"
+#include "water.h"
 
 #define MWM_HINTS_FUNCTIONS (1L << 0)
 #define MWM_HINTS_DECORATIONS (1L << 1)

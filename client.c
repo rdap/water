@@ -29,7 +29,7 @@
 #include <X11/Xutil.h>
 
 #include "list.h"
-#include "wind.h"
+#include "water.h"
 
 struct client {
 	struct listener listener;

@@ -50,7 +50,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-bin_PROGRAMS = wind$(EXEEXT)
+bin_PROGRAMS = water$(EXEEXT)
 @CONFIG_XFT_TRUE@am__append_1 = xftfont.c
 @CONFIG_XFT_FALSE@am__append_2 = x11font.c
 subdir = .
@@ -69,19 +69,19 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(man1dir)" \
 	"$(DESTDIR)$(docdir)"
 PROGRAMS = $(bin_PROGRAMS)
-am__wind_SOURCES_DIST = button.c client.c dragger.c ewmh.c frame.c \
-	lib.c list.h main.c mwm.c root.c wind.h deleven.xbm delodd.xbm \
+am__water_SOURCES_DIST = button.c client.c dragger.c ewmh.c frame.c \
+	lib.c list.h main.c mwm.c root.c water.h deleven.xbm delodd.xbm \
 	xftfont.c x11font.c
 @CONFIG_XFT_TRUE@am__objects_1 = xftfont.$(OBJEXT)
 @CONFIG_XFT_FALSE@am__objects_2 = x11font.$(OBJEXT)
-am_wind_OBJECTS = button.$(OBJEXT) client.$(OBJEXT) dragger.$(OBJEXT) \
+am_water_OBJECTS = button.$(OBJEXT) client.$(OBJEXT) dragger.$(OBJEXT) \
 	ewmh.$(OBJEXT) frame.$(OBJEXT) lib.$(OBJEXT) main.$(OBJEXT) \
 	mwm.$(OBJEXT) root.$(OBJEXT) $(am__objects_1) $(am__objects_2)
-wind_OBJECTS = $(am_wind_OBJECTS)
+water_OBJECTS = $(am_water_OBJECTS)
 am__DEPENDENCIES_1 =
-wind_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+water_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1)
-wind_LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(wind_LDFLAGS) $(LDFLAGS) \
+water_LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(water_LDFLAGS) $(LDFLAGS) \
 	-o $@
 DEFAULT_INCLUDES = -I.@am__isrc@
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -91,8 +91,8 @@ COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 CCLD = $(CC)
 LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(wind_SOURCES)
-DIST_SOURCES = $(am__wind_SOURCES_DIST)
+SOURCES = $(water_SOURCES)
+DIST_SOURCES = $(am__water_SOURCES_DIST)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -241,17 +241,17 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 xft_CFLAGS = @xft_CFLAGS@
 xft_LIBS = @xft_LIBS@
-dist_man_MANS = wind.1
+dist_man_MANS = water.1
 dist_doc_DATA = \
 	LICENSE \
 	NEWS \
 	README
 
-wind_SOURCES = button.c client.c dragger.c ewmh.c frame.c lib.c list.h \
-	main.c mwm.c root.c wind.h deleven.xbm delodd.xbm \
+water_SOURCES = button.c client.c dragger.c ewmh.c frame.c lib.c list.h \
+	main.c mwm.c root.c water.h deleven.xbm delodd.xbm \
 	$(am__append_1) $(am__append_2)
-wind_LDFLAGS = $(X_LIBS)
-wind_LDADD = $(xft_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
+water_LDFLAGS = $(X_LIBS)
+water_LDADD = $(xft_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
 all: all-am
 
 .SUFFIXES:
@@ -330,9 +330,9 @@ uninstall-binPROGRAMS:
 
 clean-binPROGRAMS:
 	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
-wind$(EXEEXT): $(wind_OBJECTS) $(wind_DEPENDENCIES) $(EXTRA_wind_DEPENDENCIES) 
-	@rm -f wind$(EXEEXT)
-	$(wind_LINK) $(wind_OBJECTS) $(wind_LDADD) $(LIBS)
+water$(EXEEXT): $(water_OBJECTS) $(water_DEPENDENCIES) $(EXTRA_water_DEPENDENCIES) 
+	@rm -f water$(EXEEXT)
+	$(water_LINK) $(water_OBJECTS) $(water_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

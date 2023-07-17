@@ -26,7 +26,7 @@
 #include <X11/Xatom.h>
 #include <X11/Xlib.h>
 
-#include "wind.h"
+#include "water.h"
 
 #define DEFAULT_NUMBER_OF_DESKTOPS 12
 

@@ -24,7 +24,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "wind.h"
+#include "water.h"
 
 #define DEFAULT "-*-helvetica-medium-r-*-*-12-*-*-*-*-*-*-*"
 

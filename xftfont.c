@@ -24,7 +24,7 @@
 #include <X11/Xft/Xft.h>
 #include <string.h>
 
-#include "wind.h"
+#include "water.h"
 
 #define DEFAULT "sans-serif:size=10"
 

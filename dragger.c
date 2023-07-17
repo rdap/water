@@ -24,7 +24,7 @@
 #include <stdlib.h>
 #include <X11/Xlib.h>
 
-#include "wind.h"
+#include "water.h"
 
 struct dragger {
 	struct listener listener;

@@ -34,7 +34,7 @@
 #include <X11/Xresource.h>
 #include <X11/Xutil.h>
 
-#include "wind.h"
+#include "water.h"
 
 #include "deleven.xbm"
 #include "delodd.xbm"

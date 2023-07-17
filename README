@@ -1,26 +1,23 @@
-The Wind window manager
+water: A floating window manager
 
-By Johan Veenhuizen
-veenhuizen@users.sourceforge.net
-
-http://windwm.sourceforge.net
+https://github.com/rdap/water
 
 
 Documentation
 
-  Refer to the manual page for information on how to use Wind.
+  Refer to the manual page for information on how to use water.
 
 
 License
 
-  Wind is free software distributed under the MIT license. The
+  water is free software distributed under the MIT license. The
 file LICENSE contains the full terms and conditions. The license
 text is also included in the manual page.
 
 
 Installation
 
-  Wind uses GNU Autotools for configuration and building. The
+  water uses GNU Autotools for configuration and building. The
 following commands will configure, build, and install the
 program and documentation at the default locations.
 
@@ -36,21 +33,19 @@ supported options.
 Reporting bugs
 
   If you find a bug, please try to reproduce it while running
-Wind with the -v option. This option will print the version
+water with the -v option. This option will print the version
 information, along with Xlib errors, to the standard error file
 descriptor. This output might prove useful in understanding the
 bug, so please include it in your report.
 
   Try to provide a detailed description of how to reproduce
-the problem, and send your report to the Wind mailing list,
-<windwm-bugs@lists.sourceforge.net>. You don't need to subscribe
-to this list, but if you're interested in Wind news and development
-you are very welcome to do so.
+the problem, and send your report to the water maintainer,
+<43019545+rdap@users.noreply.github.com>.
 
 
 Building the git source
 
-  The configure script and other files needed to build Wind are
+  The configure script and other files needed to build water are
 not under version control, so if you cloned the git repository
 you will need to generate them using the following command.
 
@@ -62,6 +57,6 @@ installed on your system.
 
 Hacking
 
-  Wind is implemented in C99, so it is okay to use most C99
+  water is implemented in C99, so it is okay to use most C99
 features. Please make an honest attempt to follow the coding
 style.

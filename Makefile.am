@@ -1,13 +1,13 @@
-bin_PROGRAMS = wind
+bin_PROGRAMS = water
 
-dist_man_MANS = wind.1
+dist_man_MANS = water.1
 
 dist_doc_DATA = \
 	LICENSE \
 	NEWS \
 	README
 
-wind_SOURCES = \
+water_SOURCES = \
 	button.c \
 	client.c \
 	dragger.c \
@@ -18,15 +18,15 @@ wind_SOURCES = \
 	main.c \
 	mwm.c \
 	root.c \
-	wind.h \
+	water.h \
 	deleven.xbm \
 	delodd.xbm
 
 if CONFIG_XFT
-wind_SOURCES+=xftfont.c
+water_SOURCES+=xftfont.c
 else
-wind_SOURCES+=x11font.c
+water_SOURCES+=x11font.c
 endif
 
-wind_LDFLAGS = $(X_LIBS)
-wind_LDADD = $(xft_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
+water_LDFLAGS = $(X_LIBS)
+water_LDADD = $(xft_LIBS) $(X_PRE_LIBS) -lX11 $(X_EXTRA_LIBS)
