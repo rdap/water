@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Other
+.deps/
+Makefile
+config.log
+config.status
+water
