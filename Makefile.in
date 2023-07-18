@@ -56,7 +56,7 @@ bin_PROGRAMS = water$(EXEEXT)
 subdir = .
 DIST_COMMON = README $(am__configure_deps) $(dist_doc_DATA) \
 	$(dist_man_MANS) $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
-	$(top_srcdir)/configure NEWS depcomp install-sh missing
+	$(top_srcdir)/configure depcomp install-sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
@@ -244,7 +244,6 @@ xft_LIBS = @xft_LIBS@
 dist_man_MANS = water.1
 dist_doc_DATA = \
 	LICENSE \
-	NEWS \
 	README
 
 water_SOURCES = button.c client.c dragger.c ewmh.c frame.c lib.c list.h \

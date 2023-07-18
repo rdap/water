@@ -4,7 +4,6 @@ dist_man_MANS = water.1
 
 dist_doc_DATA = \
 	LICENSE \
-	NEWS \
 	README
 
 water_SOURCES = \
