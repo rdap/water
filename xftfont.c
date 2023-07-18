@@ -27,7 +27,7 @@
 
 #include "water.h"
 
-#define DEFAULT "LiberationSans:size=10:weight=semibold:style=italic:hinting=off"
+#define DEFAULT "LiberationSans:size=12:weight=semibold:style=italic:hinting=off"
 
 struct font *ftload(const char *name)
 {
