@@ -1,5 +1,6 @@
 /*
  * Copyright 2010 Johan Veenhuizen
+ * Copyright 2023 Ryan Petersen
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -204,9 +205,9 @@ int main(int argc, char *argv[])
 	char *ftname = NULL;
 
 	char *fname = "rgb:00/00/00";
-	char *bname = "rgb:ff/ff/ff";
+	char *bname = "rgb:8a/8a/8a";
 	char *hlfname = "rgb:00/00/00";
-	char *hlbname = "rgb:00/ff/ff";
+	char *hlbname = "rgb:70/6d/ff";
 
 	Desk ndesk = 0;
 
