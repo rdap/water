@@ -1,5 +1,6 @@
 /*
  * Copyright 2010 Johan Veenhuizen
+ * Copyright 2023 Ryan Petersen
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -136,8 +137,8 @@ static struct {
 	unsigned modifiers;
 	void (*function)(struct client *, unsigned, Time);
 } keymap[] = {
-	{ XK_BackSpace, Mod1Mask, keypress_delete },
-	{ XK_Escape, Mod1Mask, keypress_pushapp },
+	{ XK_C, ShiftMask | Mod1Mask, keypress_delete },
+	{ XK_Tab, Mod1Mask, keypress_pushapp },
 	{ XK_Return, Mod1Mask, keypress_fullscreen },
 	{ XK_space, Mod1Mask, keypress_sticky },
 };
