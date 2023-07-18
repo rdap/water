@@ -109,24 +109,24 @@ There are no minimized windows in
 but there are two substitutes:
 virtual desktops help organizing related windows,
 and the
-.B Alt-Esc
+.B Alt-Tab
 key binding cycles between the applications on the current desktop.
 .TP
 Virtual desktops
 .I water
 supports virtual desktops as defined by
 the Extended Window Manager Hints specification.
-The first twelve desktops are addressable using the
-.BI Alt-F n
+The ten desktops are addressable using the
+.BI Alt-<num> 
 key bindings.
-An external pager is needed to address more than twelve desktops.
+An external pager is needed to address more than ten desktops.
 .PP
 The following key bindings are provided:
 .TP
-.B Alt-Esc
+.B Alt-Tab
 Cycle through the open applications on the current desktop.
 .TP
-.B Alt-Backspace
+.B Alt-Shift-C
 Ask the focused window to delete itself.
 .TP
 .B Alt-Return
@@ -137,12 +137,12 @@ Toggle stickiness of the focused window.
 A sticky window is visible on all desktops.
 This property is indicated by an underlined window title.
 .TP
-.BI Alt-F n
+.BI Alt-n
 Switch to the
 .IR n -th
 virtual desktop.
 .TP
-.BI Shift-Alt-F n
+.BI Alt-Shift-n
 Change number of virtual desktops to
 .IR n ,
 and switch to the last one.
@@ -150,7 +150,7 @@ Windows beyond desktop
 .I n
 are moved to
 .IR n .
-.B Shift-Alt-F1
+.B Alt-Shift-1
 is particularly useful when logging out.
 .PP
 .I water
@@ -176,7 +176,8 @@ startx(1), xdm(1), X(7)
 .I \%https://github.com/rdap/water
 .SH LICENSE
 .PP
-Copyright 2010 Johan Veenhuizen
+Copyright 2010 Johan Veenhuizen  
+.br
 Copyright 2023 Ryan Petersen
 .PP
 Permission is hereby granted, free of charge, to any person obtaining
