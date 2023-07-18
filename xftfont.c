@@ -1,5 +1,6 @@
 /*
  * Copyright 2010 Johan Veenhuizen
+ * Copyright 2023 Ryan Petersen
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -26,7 +27,7 @@
 
 #include "water.h"
 
-#define DEFAULT "sans-serif:size=10"
+#define DEFAULT "LiberationSans:size=10:weight=semibold:style=italic:hinting=off"
 
 struct font *ftload(const char *name)
 {
