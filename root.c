@@ -1,5 +1,6 @@
 /*
  * Copyright 2010 Johan Veenhuizen
+ * Copyright 2023 Ryan Petersen
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -51,31 +52,27 @@ static struct keybind {
 	int arg;
 	KeyCode keycode;
 } keymap[] = {
-	{ XK_F1, Mod1Mask, fnkey, 1 },
-	{ XK_F2, Mod1Mask, fnkey, 2 },
-	{ XK_F3, Mod1Mask, fnkey, 3 },
-	{ XK_F4, Mod1Mask, fnkey, 4 },
-	{ XK_F5, Mod1Mask, fnkey, 5 },
-	{ XK_F6, Mod1Mask, fnkey, 6 },
-	{ XK_F7, Mod1Mask, fnkey, 7 },
-	{ XK_F8, Mod1Mask, fnkey, 8 },
-	{ XK_F9, Mod1Mask, fnkey, 9 },
-	{ XK_F10, Mod1Mask, fnkey, 10 },
-	{ XK_F11, Mod1Mask, fnkey, 11 },
-	{ XK_F12, Mod1Mask, fnkey, 12 },
+	{ XK_1, Mod1Mask, fnkey, 1 },
+	{ XK_2, Mod1Mask, fnkey, 2 },
+	{ XK_3, Mod1Mask, fnkey, 3 },
+	{ XK_4, Mod1Mask, fnkey, 4 },
+	{ XK_5, Mod1Mask, fnkey, 5 },
+	{ XK_6, Mod1Mask, fnkey, 6 },
+	{ XK_7, Mod1Mask, fnkey, 7 },
+	{ XK_8, Mod1Mask, fnkey, 8 },
+	{ XK_9, Mod1Mask, fnkey, 9 },
+	{ XK_0, Mod1Mask, fnkey, 10 },
 
-	{ XK_F1, ShiftMask | Mod1Mask, fnkey, 1 },
-	{ XK_F2, ShiftMask | Mod1Mask, fnkey, 2 },
-	{ XK_F3, ShiftMask | Mod1Mask, fnkey, 3 },
-	{ XK_F4, ShiftMask | Mod1Mask, fnkey, 4 },
-	{ XK_F5, ShiftMask | Mod1Mask, fnkey, 5 },
-	{ XK_F6, ShiftMask | Mod1Mask, fnkey, 6 },
-	{ XK_F7, ShiftMask | Mod1Mask, fnkey, 7 },
-	{ XK_F8, ShiftMask | Mod1Mask, fnkey, 8 },
-	{ XK_F9, ShiftMask | Mod1Mask, fnkey, 9 },
-	{ XK_F10, ShiftMask | Mod1Mask, fnkey, 10 },
-	{ XK_F11, ShiftMask | Mod1Mask, fnkey, 11 },
-	{ XK_F12, ShiftMask | Mod1Mask, fnkey, 12 },
+	{ XK_1, ShiftMask | Mod1Mask, fnkey, 1 },
+	{ XK_2, ShiftMask | Mod1Mask, fnkey, 2 },
+	{ XK_3, ShiftMask | Mod1Mask, fnkey, 3 },
+	{ XK_4, ShiftMask | Mod1Mask, fnkey, 4 },
+	{ XK_5, ShiftMask | Mod1Mask, fnkey, 5 },
+	{ XK_6, ShiftMask | Mod1Mask, fnkey, 6 },
+	{ XK_7, ShiftMask | Mod1Mask, fnkey, 7 },
+	{ XK_8, ShiftMask | Mod1Mask, fnkey, 8 },
+	{ XK_9, ShiftMask | Mod1Mask, fnkey, 9 },
+	{ XK_0, ShiftMask | Mod1Mask, fnkey, 10 },
 };
 
 static void fnkey(KeySym keysym, unsigned state, Time time, int arg)
